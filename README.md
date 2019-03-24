@@ -25,26 +25,32 @@ Requirements
 Installation
 ------------
 0. make sure rtl_433 is working fine and showing your sensors:
-	rtl_r433 -R 40
-	
+```
+rtl_r433 -R 40
+```
+
 1. get all the software to your local folder in RasPi:
-	cd ~
-	git clone https://github.com/adam-aph/RasPi-Weatherd.git
-	cd RasPi-Weatherd
-	sudo chmod 777 *
-	
+```
+cd ~
+git clone https://github.com/adam-aph/RasPi-Weatherd.git
+cd RasPi-Weatherd
+sudo chmod 777 *
+```
+
 2. edit weather.ini with your PWS credentials
 
 3. move service setup files into system directory:
-	sudo mv weatherd /etc/systemd/system/
-	sudo mv weatherd.service /lib/systemd/system/
-	
+```
+sudo mv weatherd /etc/systemd/system/
+sudo mv weatherd.service /lib/systemd/system/
+```	
 4. start your service and make it permanent:
-	sudo systemctl start weatherd
-	sudo systemctl enable weatherd
-
+```
+sudo systemctl start weatherd
+sudo systemctl enable weatherd
+```
 5. make sure it is starting after reboot:
-	sudo reboot
-	
+```
+sudo reboot
+```	
 Thats it!
-	
