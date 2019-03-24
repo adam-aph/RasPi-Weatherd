@@ -106,10 +106,10 @@ class WeatherD:
                 proc = subprocess.Popen(['rtl_433','-R','40'], stdout=subprocess.PIPE)
 
                 msgid_re = re.compile('.*Acurite-5n1.*message_type\" : (\d\d).*')
-                msg56_re = re.compile('.*wind_speed.* : (\d+\.?\d*).*temperature.* : (\d+\.?\d*).*humidity.* : (\d+\.?\d*).*')
+                msg56_re = re.compile('.*wind_speed.* : (\d+\.?\d*).*temperature.* : (\d+\.?\d*).*humidity\" : (\d+\.?\d*).*')
                 msg49_re = re.compile('.*wind_speed.* : (\d+\.?\d*).*wind_dir.* : (\d+\.?\d*).*rain.* : (\d+\.?\d*).*')
-                msgLight_re = re.compile('.*Acurite-Lightning.*temperature.* : (\d+\.?\d*).*humidity.* : (\d+\.?\d*).*strike_count.* : (\d+\.?\d*).*storm_dist.* : (\d+\.?\d*).*')
-                msgTower_re = re.compile('.*Acurite-Tower.*temperature.* : (\d+\.?\d*).*humidity.* : (\d+\.?\d*).*')
+                msgLight_re = re.compile('.*Acurite-Lightning.*temperature.* : (\d+\.?\d*).*humidity\" : (\d+\.?\d*).*strike_count.* : (\d+\.?\d*).*storm_dist.* : (\d+\.?\d*).*')
+                msgTower_re = re.compile('.*Acurite-Tower.*temperature.* : (\d+\.?\d*).*humidity\" : (\d+\.?\d*).*')
 
                 got_msg49 = False
                 got_msg56 = False
