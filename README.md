@@ -4,7 +4,7 @@ RasPi-Weatherd
 Service to use rtl_433 output to read Acurite sensors and update Weather Underground.
 
 Currently it supports following sensors:
-- Acuritt 5n1
+- Acurite 5n1
 - Acurite Lightning
 - Acurite Tower
 
