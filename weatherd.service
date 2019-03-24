@@ -1,0 +1,14 @@
+[Unit]
+Description=Weather Updater
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/RasPi-Weatherd
+ExecStart=/etc/systemd/system/weatherd start
+Restart=always
+SyslogIdentifier=Weatherd
+
+[Install]
+WantedBy=multi-user.target
