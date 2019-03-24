@@ -54,3 +54,7 @@ sudo systemctl enable weatherd
 sudo reboot
 ```	
 Thats it!
+
+Note
+----
+This software translates metric values (Celsius, kmph etc) to imperial before sending data to WU. If your sensors send Fahnrenhait, inches etc then remove all translation functions from lines 73-80 of weatherd.py
