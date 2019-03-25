@@ -58,3 +58,9 @@ Thats it!
 Note
 ----
 This software translates metric values (Celsius, kmph etc) to imperial before sending data to WU. If your sensors send Fahnrenhait, inches etc then remove all translation functions from lines 73-80 of weatherd.py
+
+Gallery
+-------
+![Ancient RasPi 1B with RTL-SDR Dongle](raspi-1b-sdr.jpg?raw=true "Ancient RasPi 1B with RTL-SDR Dongle")
+
+
